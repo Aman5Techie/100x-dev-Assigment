@@ -1,0 +1,27 @@
+/*
+  Implement a function `countVowels` that takes a string as an argument and returns the number of vowels in the string.
+  Note: Consider both uppercase and lowercase vowels ('a', 'e', 'i', 'o', 'u').
+
+  Once you've implemented the logic, test your code by running
+*/
+
+function countVowels(str) {
+  // Your code here
+  let vowels = 0;
+  for (let i = 0; i < str.length; i++) {
+    vowel = str[i].toLowerCase();
+    if (
+      vowel == "a" ||
+      vowel == "e" ||
+      vowel == "i" ||
+      vowel == "o" ||
+      vowel == "u"
+    ) {
+      vowels++;
+    }
+    
+  }
+  return vowels;
+}
+
+module.exports = countVowels;
